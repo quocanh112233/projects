@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>My portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #4da6ff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .nav {
+            margin-right: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .content {
+            margin-top: 50px;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .projects {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px;
+            width: 100%;
+        }
+
+        .project {
+            border: 2px solid #4C8DBE;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            width: 25%;
+            background-color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .project img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .project h3 {
+            margin-top: 10px;
+            border: 2px solid #4C8DBE;
+            border-radius: 5px;
+            padding: 10px;
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .project:hover {
+            background-color: #4C8DBE;
+            color: white;
+        }
+
+        .project h3 {
+            background-color: white;
+            color: #4C8DBE;
+            border-color: white;
+        }
+
+        .footer {
+            background-color: black;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Quoc Anh</h1>
+        <div class="nav">
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="about-link">About</a>
+            <a href="#" id="projects-link">Projects</a>
+            <a href="#" id="contact-link">Contact</a>
+        </div>
+    </div>
+
+    <main class="content">
+        <section class="projects">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+            </div>
+        </section>
+    </main>
+
+    <div class="footer">
+        <p>&copy; 2024 Quoc Anh. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.getElementById("home-link").onmouseover = function() {this.style.color = "black"};
+        document.getElementById("home-link").onmouseout = function() {this.style.color = "white"};
+
+        document.getElementById("about-link").onmouseover = function() {this.style.color = "black"};
+        document.getElementById("about-link").onmouseout = function() {this.style.color = "white"};
+
+        document.getElementById("projects-link").onmouseover = function() {this.style.color = "black"};
+        document.getElementById("projects-link").onmouseout = function() {this.style.color = "white"};
+
+        document.getElementById("contact-link").onmouseover = function() {this.style.color = "black"};
+        document.getElementById("contact-link").onmouseout = function() {this.style.color = "white"};
+    </script>
+
+</body>
+</html>
